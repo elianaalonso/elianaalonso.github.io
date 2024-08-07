@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Antic Didone";
+    src: url(fonts/AnticDidone-Regular.ttf) format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bodoni";
+    src: url(fonts/BodoniFLF-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Agrandir";
+    src: url(fonts/Agrandir-Regular.otf) format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(fonts/Raleway-Regular.ttf) format("truetype");
+    font-style: normal;
+}

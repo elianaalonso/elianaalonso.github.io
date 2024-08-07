@@ -1,0 +1,194 @@
+body, html { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+ 
+
+.contenedor1 {
+    background: url(img/2.png) no-repeat center center;
+    background-size: cover;
+}
+
+.contenedor2 {
+    background-color: #15342D;
+}
+
+.contenedor3 {
+    background-image:url(img/3.png);
+    background-size: cover;
+}
+
+.contenedor4 {
+    height: 4.5cm; 
+    display: flex;
+    flex-direction: column;
+    background-color: #15342D;
+}
+
+section#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: "Bodoni";
+    text-align: center;
+    font-size: 85px;
+    color: #123431;
+    margin-bottom: 0;
+    letter-spacing: 6px;
+}
+
+.unique {
+    margin-bottom: 40px;
+    margin-left: 350px;
+    text-align: center;
+    font-family: "Raleway";
+    color: #123431;
+    font-size: 17px;
+}
+
+.about {
+    font-family: "Agrandir";
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-transform: none;
+    color: #123431;
+}
+
+
+nav.top {
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    
+}
+
+nav.top ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav.top ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav.top ul li a {
+    color: #123431;
+    font-family: "Antic Didone";
+    text-decoration: none;
+}
+
+
+section#services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #15342D;
+    margin: 0px;
+    padding: 0px;
+}
+
+section#services h2{
+    font-family: "Bodoni";
+    text-align: center;
+    margin-top: 2cm;
+    margin-left: 2cm;
+    font-size: 85px;
+    color: #CBCCCC;
+    letter-spacing: 6px;
+}
+
+.service {
+    font-family: "Agrandir";
+    color: #CBCCCC;
+    margin-left: 4cm;
+    font-size: 20px;
+}
+
+section#portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+    margin: 0px;
+    padding: 0px;
+}
+
+section#portfolio h2 {
+    font-family: "Bodoni";
+    text-align: center;
+    font-size: 85px;
+    color:#123431;
+    letter-spacing: 6px;
+    margin-top: 2cm;
+}
+
+.portfolio {
+    font-family: "Agrandir";
+    color: #123431;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+h3 {
+    font-family: "Antic Didone";
+    font-size: 22px;
+    text-align: center;
+    color: #CBCCCC;
+
+}
+
+nav.contact {
+    width: 100%;
+    height: 10px;  
+}
+
+nav.contact ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5cm;
+    margin: 0;
+    padding: 0;
+    margin-top: 1cm;
+}
+
+nav.contact ul li {
+    color: #CBCCCC;
+    font-size: 18px;
+    list-style: none;
+}
+
+nav.contact ul li a {
+    color:#CBCCCC;
+    font-family: "Antic Didone";
+    text-decoration: none;
+}
+
