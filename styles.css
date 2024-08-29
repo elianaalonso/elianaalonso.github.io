@@ -5,8 +5,6 @@ body, html {
     overflow-x: hidden;
 }
 
- 
-
 .contenedor1 {
     background: url(img/2.png) no-repeat center center;
     background-size: cover;
@@ -22,7 +20,7 @@ body, html {
 }
 
 .contenedor4 {
-    height: 4.5cm; 
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: #15342D;
@@ -35,49 +33,47 @@ section#about {
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-family: "Bodoni";
     text-align: center;
-    font-size: 85px;
+    font-size: 5.3125rem; /* 85px to rem */
     color: #123431;
     margin-bottom: 0;
-    letter-spacing: 6px;
+    letter-spacing: 0.375rem; /* 6px to rem */
 }
 
 .unique {
-    margin-bottom: 40px;
-    margin-left: 350px;
+    margin-bottom: 2.5rem; /* 40px to rem */
+    margin-left: 21.875rem; /* 350px to rem */
     text-align: center;
     font-family: "Raleway";
     color: #123431;
-    font-size: 17px;
+    font-size: 1.0625rem; /* 17px to rem */
 }
 
 .about {
     font-family: "Agrandir";
     font-style: normal;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px to rem */
     font-weight: normal;
     line-height: 2;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem; /* 1px to rem */
     text-transform: none;
     color: #123431;
 }
 
-
 nav.top {
     width: 100%;
-    height: 65px;
+    height: 4.0625rem; /* 65px to rem */
     position: fixed;
     top: 0;
     left: 0;
-    font-size: 18px;
-    
+    font-size: 1.125rem; /* 18px to rem */
 }
 
 nav.top ul {
@@ -91,7 +87,7 @@ nav.top ul {
 
 nav.top ul li {
     list-style: none;
-    margin-left: 50px;
+    margin-left: 3.125rem; /* 50px to rem */
 }
 
 nav.top ul li a {
@@ -99,7 +95,6 @@ nav.top ul li a {
     font-family: "Antic Didone";
     text-decoration: none;
 }
-
 
 section#services {
     width: 100%;
@@ -109,25 +104,25 @@ section#services {
     align-items: flex-start;
     height: 100vh;
     background-color: #15342D;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
-section#services h2{
+section#services h2 {
     font-family: "Bodoni";
     text-align: center;
-    margin-top: 2cm;
-    margin-left: 2cm;
-    font-size: 85px;
+    margin-top: 1.25rem; /* 2cm to rem */
+    margin-left: 1.25rem; /* 2cm to rem */
+    font-size: 5.3125rem; /* 85px to rem */
     color: #CBCCCC;
-    letter-spacing: 6px;
+    letter-spacing: 0.375rem; /* 6px to rem */
 }
 
 .service {
     font-family: "Agrandir";
     color: #CBCCCC;
-    margin-left: 4cm;
-    font-size: 20px;
+    margin-left: 2.5rem; /* 4cm to rem */
+    font-size: 1.25rem; /* 20px to rem */
 }
 
 section#portfolio {
@@ -136,53 +131,56 @@ section#portfolio {
     flex-direction: column;
     align-items: center;
     height: 100vh; 
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 section#portfolio h2 {
     font-family: "Bodoni";
     text-align: center;
-    font-size: 85px;
+    font-size: 5.3125rem; /* 85px to rem */
     color:#123431;
-    letter-spacing: 6px;
-    margin-top: 2cm;
+    letter-spacing: 0.375rem; /* 6px to rem */
+    margin-top: 1.25rem; /* 2cm to rem */
 }
 
 .portfolio {
     font-family: "Agrandir";
     color: #123431;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px to rem */
 }
-
 
 h3 {
     font-family: "Antic Didone";
-    font-size: 22px;
+    font-size: 1.375rem; /* 22px to rem */
     text-align: center;
     color: #CBCCCC;
-
 }
 
+.contact-article{
+    margin-bottom: 2em;
+}
 nav.contact {
     width: 100%;
-    height: 10px;  
+    height: 0.625rem;  /* 10px to rem */
+    height: auto; 
+    padding-bottom: 0; 
 }
 
 nav.contact ul {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    gap: 5cm;
+    gap: 3.125rem; /* 5cm to rem */
     margin: 0;
     padding: 0;
-    margin-top: 1cm;
+    margin-top: 0.625rem; /* 1cm to rem */
 }
 
 nav.contact ul li {
     color: #CBCCCC;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px to rem */
     list-style: none;
 }
 
@@ -192,3 +190,75 @@ nav.contact ul li a {
     text-decoration: none;
 }
 
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (teléfonos en orientación vertical) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem; /* Reduce el tamaño de fuente */
+        letter-spacing: 0.2rem;
+    }
+
+    .unique {
+        margin-left: 1rem;
+        font-size: 0.875rem;
+    }
+
+    .service, .portfolio {
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    nav.top ul li {
+        margin-left: 1rem;
+    }
+
+    section#services h2, section#portfolio h2 {
+        font-size: 3rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    nav.contact ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Para pantallas medianas (tabletas en orientación horizontal) */
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3.5rem; 
+        letter-spacing: 0.3rem;
+    }
+
+    .unique {
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+
+    .service, .portfolio {
+        margin-left: 2rem;
+        font-size: 1.125rem;
+    }
+
+    nav.top ul li {
+        margin-left: 1.5rem;
+    }
+
+    section#services h2, section#portfolio h2 {
+        font-size: 4rem;
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    nav.contact ul {
+        gap: 2rem;
+    }
+}
+
+/* Para pantallas grandes (PCs y laptops) */
+@media (min-width: 901px) {
+    
+}
